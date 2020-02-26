@@ -1,0 +1,120 @@
+PS C:\Users\scyth\gitlab\Stromboli> dotnet run
+[000002c088716ab0] main libvlc debug: VLC media player - 3.0.8 Vetinari
+[000002c088716ab0] main libvlc debug: Copyright ┬⌐ 1996-2019 the VideoLAN team
+[000002c088716ab0] main libvlc debug: revision 3.0.8-0-gf350b6b5a7
+[000002c088716ab0] main libvlc debug: configured with ../extras/package/win32/../../../configure  '--enable-update-check' '--enable-lua' '--enable-faad' '--enable-flac' 
+'--enable-theora' '--enable-avcodec' '--enable-merge-ffmpeg' '--enable-dca' '--enable-mpc' '--enable-libass' '--enable-schroedinger' '--enable-realrtsp' '--enable-live555' '--enable-dvdread' '--enable-shout' '--enable-goom' '--enable-caca' '--enable-qt' '--enable-skins2' '--enable-sse' '--enable-mmx' '--enable-libcddb' '--enable-zvbi' '--disable-telx' '--enable-nls' '--host=x86_64-w64-mingw32' '--with-breakpad=https://win.crashes.videolan.org' 'host_alias=x86_64-w64-mingw32' 'PKG_CONFIG_LIBDIR=/home/jenkins/workspace/vlc-release/windows/vlc-release-win32-x64/contrib/x86_64-w64-mingw32/lib/pkgconfig'
+[000002c088716ab0] main libvlc debug: using multimedia timers as clock source
+[000002c088716ab0] main libvlc debug:  min period: 1 ms, max period: 1000000 ms
+[000002c088716ab0] main libvlc debug: searching plug-in modules
+[000002c088716ab0] main libvlc debug: loading plugins cache file C:\Users\scyth\gitlab\Stromboli\bin\Debug\netcoreapp3.1\libvlc\win-x64\plugins\plugins.dat
+[000002c088716ab0] main libvlc warning: cannot read C:\Users\scyth\gitlab\Stromboli\bin\Debug\netcoreapp3.1\libvlc\win-x64\plugins\plugins.dat: No such file or directory
+[000002c088716ab0] main libvlc debug: recursively browsing `C:\Users\scyth\gitlab\Stromboli\bin\Debug\netcoreapp3.1\libvlc\win-x64\plugins'
+[000002c088716ab0] main libvlc debug: plug-ins loaded: 494 modules
+[000002c088716da0] main logger debug: looking for logger module matching "any": 2 candidates
+[000002c088716da0] main logger debug: using logger module "console"
+[000002c088716ab0] main libvlc debug: translation test: code is "C"
+[000002c0a2a86350] main keystore debug: looking for keystore module matching "memory": 3 candidates
+[000002c0a2a86350] main keystore debug: using keystore module "memory"
+[000002c088716ab0] main libvlc debug: CPU has capabilities MMX MMXEXT SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 FPU 
+[000002c088719d20] main generic debug: creating audio output
+[000002c0a2e8ec20] main audio output debug: looking for audio output module matching "any": 6 candidates
+[000002c0a2e8ec20] mmdevice audio output debug: using default device
+[000002c0a2e8ec20] mmdevice audio output debug: display name changed: VLC media player (LibVLC 3.0.8)
+[000002c0a2e8ec20] mmdevice audio output debug: version 2 session control unavailable
+[000002c0a2e8ec20] mmdevice audio output debug: volume from -62.000000 dB to +0.000000 dB with 1.000000 dB increments
+[000002c0a2e8ec20] main audio output debug: using audio output module "mmdevice"
+[000002c088719d20] main generic debug: keeping audio output
+[000002c088719b60] main probe debug: looking for renderer probe module matching "any": 1 candidates
+[000002c088719b60] main probe debug: no renderer probe modules matched
+[000002c0a2e86650] main renderer discovery debug: looking for renderer_discovery module matching "microdns_renderer": 1 candidates
+[000002c0a2e86650] microdns renderer discovery debug: mDNS: listening to _googlecast._tcp.local renderer
+[000002c0a2e86650] main renderer discovery debug: using renderer_discovery module "microdns"
+[000002c0a3128980] main input debug: Creating an input for 'screen://'
+[000002c0a2d38d90] main stream output debug: using sout chain=`chromecast{ip=192.168.0.20,port=8009}'
+[000002c0a2d38d90] main stream output debug: stream=`chromecast'
+[000002c0a312e3a0] main stream out debug: looking for sout stream module matching "chromecast": 23 candidates
+[000002c0a312e3a0] main stream out debug: set config option: sout-chromecast-ip to 192.168.0.20
+[000002c0a312e3a0] main stream out debug: set config option: sout-chromecast-port to 8009
+[000002c0a312e3a0] main stream out debug: net: listening to * port 8010
+[000002c0a2a56890] main tls client debug: looking for tls client module matching "any": 1 candidates
+[000002c0a2a56890] gnutls tls client debug: using GnuTLS version 3.5.19
+[000002c0a2a56890] gnutls tls client debug: loaded 64 trusted CAs from system
+[000002c0a2a56890] main tls client debug: using tls client module "gnutls"   
+[000002c0a2a56890] main tls client debug: resolving 192.168.0.20 ...
+[000002c0a2a56890] gnutls tls client debug: TLS handshake: Resource temporarily unavailable, try again.
+[000002c0a2a56890] gnutls tls client debug: TLS handshake: Success.
+[000002c0a2a56890] gnutls tls client debug:  - safe renegotiation (RFC5746) enabled
+[000002c0a2a56890] gnutls tls client debug:  - extended master secret (RFC7627) enabled
+[000002c0a2a56890] gnutls tls client debug:  - false start (RFC7918) enabled
+[000002c0a2a56890] gnutls tls client error: Certificate verification failure: The certificate is NOT trusted. The certificate issuer is unknown. The name in the certificate does not match the expected. 
+[000002c0a2a56890] gnutls tls client: Accepting self-signed/untrusted CA certificate.
+[000002c0a312e3a0] main stream out debug: using sout stream module "stream_out_chromecast"
+[000002c0a3128980] main input debug: using timeshift granularity of 50 MiB
+[000002c0a3128980] main input debug: using timeshift path: C:\Users\scyth\AppData\Local\Temp
+[000002c0a3128980] main input debug: `screen://' gives access `screen' demux `any' path `'
+[000002c0a3143bb0] main input source debug: creating demux: access='screen' demux='any' location='' file='(null)'
+[000002c0a32aff00] main demux debug: looking for access_demux module matching "screen": 15 candidates
+[000002c0a32aff00] screen demux debug: screen width: 1920, height: 1080, depth: 32
+[000002c0a32aff00] screen demux debug: capturing subscreen top: 0, left: 0, width: 1920, height: 1080
+[000002c0a3128980] main input debug: selecting program id=0
+[000002c0a32aff00] main demux debug: using access_demux module "screen"
+[000002c0a32af5d0] main demux_filter debug: looking for demux_filter module matching "cc_demux": 2 candidates
+[000002c0a3128980] main input debug: ES_OUT_RESET_PCR called
+[000002c0a32af5d0] main demux_filter debug: using demux_filter module "demux_chromecast"
+[000002c0a32b02f0] main decoder debug: looking for packetizer module matching "any": 25 candidates
+[000002c0a32b02f0] rawvideo decoder warning: invalid frame rate 0/0, using 25 fps instead
+[000002c0a32b02f0] main decoder debug: using packetizer module "rawvideo"
+[000002c0a3128980] main input debug: starting in sync mode
+[000002c0a2a55f30] main demux meta debug: looking for meta reader module matching "any": 2 candidates
+[000002c0a2a55f30] lua demux meta debug: Trying Lua scripts in C:\Users\scyth\AppData\Roaming\vlc\lua\meta\reader
+[000002c0a2a55f30] lua demux meta debug: Trying Lua scripts in C:\Users\scyth\gitlab\Stromboli\bin\Debug\netcoreapp3.1\libvlc\win-x64\lua\meta\reader
+[000002c0a2a55f30] lua demux meta debug: Trying Lua playlist script C:\Users\scyth\gitlab\Stromboli\bin\Debug\netcoreapp3.1\libvlc\win-x64\lua\meta\reader\filename.luac 
+[000002c0a2a55f30] main demux meta debug: no meta reader modules matched
+[000002c0a3128980] main input debug: `screen://' successfully opened
+[000002c0a3128980] main input debug: Buffering 0%
+[000002c0a3128980] main input debug: switching to async mode
+[000002c0a2d38d90] main stream output debug: adding a new sout input for `RV32` (sout_input: 000002c0a329d4a0)
+[000002c0a3128980] main input debug: Buffering 13%
+[000002c0a3128980] main input debug: Buffering 27%
+[000002c0a3128980] main input debug: Buffering 41%
+[000002c0a3128980] main input debug: Buffering 55%
+[000002c0a3128980] main input debug: Buffering 69%
+[000002c0a3128980] main input debug: Buffering 83%
+[000002c0a3128980] main input debug: Stream buffering done (333 ms in 327 ms)
+[000002c0a3128980] main input debug: Decoder wait done in 0 ms
+[000002c0a312e3a0] stream_out_chromecast stream out debug: can't remux video track 0 codec RV32
+[000002c0a32b02f0] main decoder error: cannot continue streaming due to errors with codec RV32
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a312e3a0] stream_out_chromecast stream out debug: PONG received from the Chromecast
+[000002c0a32b02f0] main decoder debug: killing decoder fourcc `RV32'
+[000002c0a32b02f0] main decoder debug: removing module "rawvideo"
+[000002c0a2d38d90] main stream output debug: removing a sout input (sout_input: 000002c0a329d4a0)
+[000002c0a32af5d0] main demux_filter debug: removing module "demux_chromecast"
+[000002c0a32aff00] main demux debug: removing module "screen"
+[000002c0a3128980] main input debug: Program doesn't contain anymore ES
+[000002c0a2d38d90] main stream output debug: destroying useless sout
+[000002c0a312e3a0] main stream out debug: destroying chain... (name=chromecast)
+[000002c0a312e3a0] main stream out debug: removing module "stream_out_chromecast"
+[000002c0a2d38d90] main stream output debug: attempt to destroy nonexistent variable "sout-chromecast-sout-mux-caching"
+[000002c0887171a0] main http host debug: HTTP host removed
+[000002c0a312e3a0] main stream out debug: destroying chain done
+[000002c0a2e8ec20] main audio output debug: removing module "mmdevice"
+PS C:\Users\scyth\gitlab\Stromboli>
